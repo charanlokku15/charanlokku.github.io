@@ -1,23 +1,19 @@
+/* Add this at the top of your CSS file */
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
 .profile-pic {
   position: relative;
-  max-width:130px;
-  max-height:130px;
-  width: auto;
-  height: auto;
+  width: 180px;         /* fixed width */
+  height: 180px;        /* fixed height */
   overflow: hidden;
-  /* display: inline-block; */
-  
-  
-  /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
+  margin: 20px auto;    /* center inside the sidebar */
   border: 6px solid rgba(0, 77, 64, 0.4); 
-  border-radius: 50% !important;
+  border-radius: 50% !important;  /* makes it a circle */
 }
 
 .profile-pic img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;    /* keeps aspect ratio, fills the circle */
 }
 
 .tracker {
@@ -201,7 +197,7 @@ nav i {
 
 main {
   background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
+  padding-left: 240px;
 }
 
 dl {
@@ -220,7 +216,7 @@ dt {
 }
 
 ul.side-nav {
-  width: 190px;
+  width: 240px;
 }
 
 ul.side-nav li {
@@ -260,8 +256,9 @@ ul.side-nav.fixed li.logo {
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
-  min-height: 90px;
-  padding: 30px 30px 40px;
+  min-height: 180px;   /* increased height for breathing room */
+  padding: 5px 20px 60px; /* top/bottom spacing */
+  text-align: center;  /* ensures avatar is centered */
 }
 
 ul.side-nav.fixed li.logo a {
@@ -476,30 +473,78 @@ a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
 }
 
-#skills .card.large {
-  height: 360px;
-}
-
-#skills h4 {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-}
-
-#skills .col img.responsive-img {
-  margin: 0 auto;
-  max-height: 100px;
-  padding-bottom: 10px;
+#skills .skill-item {
   text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  padding: 15px 5px;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  min-height: 120px;
 }
 
-.card.large .card-content p {
-  color: inherit;
-  margin: 0;
-  padding: 30px 0;
+#skills .skill-item:hover {
+  transform: scale(1.1);
 }
+
+#skills .skill-item i {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+#skills .skill-item div {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+#skills .grpc-icon {
+  width: 2.8rem;        /* Match other icon sizes */
+  height: 2.8rem;       /* Match other icon sizes */
+  margin: 0 auto 8px;   /* Consistent spacing */
+  display: block;       /* Proper alignment */
+}
+
+/* Specific icon adjustments */
+#skills .devicon-amazonwebservices-plain-wordmark {
+  font-size: 2.5rem; /* Slightly smaller for better fit */
+}
+
+#skills .devicon-kubernetes-plain-wordmark {
+  font-size: 2.6rem; /* Better proportions */
+}
+
+#skills .devicon-django-plain {
+  color: #092e20; /* Django's dark green */
+}
+
+#skills .devicon-fastapi-plain {
+  color: #009688; /* Teal to match your theme */
+}
+
+#skills .devicon-react-original-wordmark {
+  color: #61dafb; /* React blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  #skills .skill-item i {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #skills .skill-item {
+    padding: 10px 2px;
+  }
+  #skills .skill-item i {
+    font-size: 2rem;
+  }
+  #skills .skill-item div {
+    font-size: 0.8rem;
+  }
+}
+
 
 #experience .card-content .row {
   border-bottom: 1px solid #ddd;
@@ -691,4 +736,17 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+#projects .row.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects .row.d-flex > .col {
+  display: flex;
+}
+
+#projects .row.d-flex .card {
+  width: 100%;
 }
