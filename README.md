@@ -1,5 +1,5 @@
 # Charan Lokku's Portfolio ⚡️ 
-> A personalized, responsive portfolio based on Varad Bhogayata's template
+> A personalized, responsive portfolio 
 
 > https://charanlokku.github.io
 
