@@ -21,7 +21,7 @@
 ✔️ Contact Info\
 ✔️ Resume
 
-To view my live portfolio, **[click here](https://charanlokku.github.io/)**
+To view my live portfolio, **[click here](https://charanlokku-portfolio.netlify.app/)**
 
 ## Tools Used 🛠️
 * [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website
