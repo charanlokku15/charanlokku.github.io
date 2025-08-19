@@ -1,13 +1,13 @@
 # Charan Lokku's Portfolio ⚡️ 
 > A personalized, responsive portfolio 
 
-> https://charanlokku.github.io
+> https://charanlokku-portfolio.netlify.app/
 
 
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://charanlokku.github.io" target="_blank"><img src="examples/preview.gif">
+    <a href="https://charanlokku-portfolio.netlify.app/" target="_blank"><img src="examples/preview.gif">
   </a>
   </kbd>
 </p>
